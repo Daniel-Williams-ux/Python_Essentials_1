@@ -14,3 +14,43 @@
 # use conditional execution and the continue statement to "eat" the following vowels A, E, I, O, U from the inputted word;
 # print the uneaten letters to the screen, each one of them on a separate line.
 # Test your program with the data we've provided for you.
+
+Test data:
+Sample input:
+
+Gregory
+Expected output:
+
+G
+R
+G
+R
+Y
+Output
+Sample input:
+
+abstemious
+Expected output:
+
+B
+S
+T
+M
+S
+Output
+Sample input:
+
+IOUEA
+
+# Prompt the user to enter a word
+# and assign it to the user_word variable.
+# Prompt the user to enter a word
+user_word = input("Enter a word: ").upper()
+
+# Loop through each letter in the word
+for letter in user_word:
+    # Check if the letter is a vowel
+    if letter in ('A', 'E', 'I', 'O', 'U'):
+        continue  # Skip the vowel
+    # Print the uneaten letters, each on a new line
+    print(letter)
