@@ -27,3 +27,19 @@ print(new_list) # [10, 8, 6]
 my_list = [10, 8, 6, 4, 2]
 new_list = my_list[3:]
 print(new_list) # [4, 2]
+
+
+my_list = [10, 8, 6, 4, 2]
+del my_list[1:3]
+print(my_list) # [10, 4, 2]
+
+# Deleting all the elements at once is possible too:
+my_list = [10, 8, 6, 4, 2]
+del my_list[:]
+print(my_list) # []
+
+# Removing the slice from the code changes its meaning dramatically.
+my_list = [10, 8, 6, 4, 2]
+del my_list
+print(my_list) # The del instruction will delete the list itself, not its content.
+# The print() function invocation from the last line of the code will then cause a runtime error.
