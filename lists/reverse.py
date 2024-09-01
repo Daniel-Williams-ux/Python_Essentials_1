@@ -35,4 +35,13 @@ print(my_list)
 # Original List: [1, 2, 3, 4, 5]
 # Reversed List: [5, 4, 3, 2, 1]
 # Summary:
-# Even though length is 5 (an odd number), the loop only needs to run length // 2 (which is 2) times. This is enough to reverse the list, as the middle element (3) doesn't need to move. The loop swaps the outer pairs, effectively reversing the list.
+# Even though length is 5 (an odd number), the loop only needs to run length // 2 (which is 2) times. 
+#This is enough to reverse the list, as the middle element (3) doesn't need to move. The loop swaps the outer pairs, effectively reversing the list.
+
+# The below code will return every item in a list, starting from the end. In other words, it returns a reversed copy of the list:
+states = ["CA", "FL", "TX", "NY", "AZ", "HI", "OR", "NJ"] # ['NJ', 'OR', 'HI', 'AZ', 'NY', 'TX', 'FL', 'CA']
+
+# or
+
+states.reverse()
+
