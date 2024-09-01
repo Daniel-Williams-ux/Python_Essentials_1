@@ -44,6 +44,23 @@ del my_list
 print(my_list) # The del instruction will delete the list itself, not its content.
 # The print() function invocation from the last line of the code will then cause a runtime error.
 
+# Adding a step size to list slicing
+# Adding another colon within the square brackets indicates the step size that you would like Python to take as it selects items from a list. 
+# For example, the code below indicates to select elements from index position 0 through to index position 5 (exclusive), but stepping through every second item:
+
+# states[0:5:2]
+# A second colon (:) can be used to indicate step size. list[start:stop:stepsize]
+states = ["CA", "FL", "TX", "NY", "AZ", "HI", "OR", "NJ"]
+print(states[0:5:2]) # ['CA', 'TX', 'AZ']
+
+states = ["CA", "FL", "TX", "NY", "AZ", "HI", "OR", "NJ"]
+states[::2]    # This returns every other item in the list, from beginning to end.
+#['CA', 'TX', 'AZ', 'OR']
+
+# The below code will return every item in a list, starting from the end. In other words, it returns a reversed copy of the list:
+states[::-1]   
+# ['NJ', 'OR', 'HI', 'AZ', 'NY', 'TX', 'FL', 'CA']
+
 
 # The in and not in operators
 # Python offers two very powerful operators, able to look through the list in order to check whether a specific value is stored inside the list or not.
