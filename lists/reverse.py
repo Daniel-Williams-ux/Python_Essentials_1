@@ -45,3 +45,7 @@ states = ["CA", "FL", "TX", "NY", "AZ", "HI", "OR", "NJ"] # ['NJ', 'OR', 'HI', '
 
 states.reverse()
 
+
+tates = ["CA", "FL", "TX", "NY", "AZ", "HI", "OR", "NJ"]
+states.reverse()
+print(states)
