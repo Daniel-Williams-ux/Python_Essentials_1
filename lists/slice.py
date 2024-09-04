@@ -1,7 +1,7 @@
 # [1:3] simply means [start:end(excluding the last index of the end)]
 my_list = [10, 8, 6, 4, 2]
 new_list = my_list[3:]
-print(new_list) # [8, 6]
+print(new_list) # [4, 2]
 
 # this copies the entire list
 my_list = [10, 8, 6, 4, 2]
